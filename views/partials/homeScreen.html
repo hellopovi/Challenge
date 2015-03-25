@@ -1,8 +1,8 @@
 <!-- Home Screen -->
 <div class="container">
 	<div class="row">
-		<div class="pull-left app-icon" ng-repeat="app in applications" ng-click="show = !show">
-				<button type="button" ng-show="show" class="close" aria-label="Close" delete-app-icon="deleteApplication(app.id)"><span aria-hidden="true">&times;</span></button>
+		<div class="pull-left app-icon" ng-repeat="app in applications" app-icon="{{ app.type }}">
+				<button type="button" class="close ng-hide" aria-label="Close" delete-app-icon="deleteApplication(app.id)"><span aria-hidden="true">&times;</span></button>
 				<a ng-href="#{{ app.url }}"><img ng-src="images/appIcons/{{app.name}}.png" height="64px" width="64px" /></a>
 				<div><center>{{ app.name }}</center></div>
 		</div>
