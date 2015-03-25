@@ -1,6 +1,6 @@
 nordeaApp.controller('ConfirmationModalController', ['$scope', '$modalInstance', function($scope, $modalInstance) {
     
-    $scope.messageText = 'You are about to delete an APP';
+    $scope.messageText = 'You are about to delete an APP!';
     
     $scope.ok = function () {
         $modalInstance.close();
