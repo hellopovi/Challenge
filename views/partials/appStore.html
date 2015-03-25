@@ -1,0 +1,12 @@
+<!-- App Store -->
+<div class="container">
+	<div class="col-xs-6 col-sm-3" ng-repeat="app in availableToInstallApplications">
+		<h3>{{ app.name }}</h3>
+		<img ng-src="images/appIcons/{{app.name}}.png" height="56px" width="56px" />
+		<p>{{app.description}}</p>
+		<p ng-switch="app.installed">
+			<a data-ng-switch-when="true" class="btn btn-danger" role="button" ng-click="deleteApplication(app.id);app.installed=false">Delete</a>
+			<a data-ng-switch-default class="btn btn-default" role="button" ng-click="installApplication(app.id);app.installed=true">Install</a>
+		</p>
+	</div>
+</div>

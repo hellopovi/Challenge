@@ -1,0 +1,9 @@
+<!-- Home Screen -->
+<div class="container">
+	<div class="row">
+		<div class="pull-left app-icon" ng-repeat="app in applications" application-icon="deleteApplication(app.id)">
+				<a ng-href="#{{ app.url }}"><img ng-src="images/appIcons/{{app.name}}.png" height="64px" width="64px" /></a>
+				<!--<div>{{ app.name }}</div>-->
+		</div>
+	</div>
+</div>
