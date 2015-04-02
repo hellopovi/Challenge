@@ -8,7 +8,7 @@ nordeaApp.controller('HomeScreenController', ['$scope', 'applicationsService', '
 	// function to delete application
 	$scope.deleteApplication = function(appId){
 		var modalInstance = $modal.open({
-			templateUrl: '/views/modals/confirmationModal.html',
+			templateUrl: 'views/modals/confirmationModal.html',
 			controller: 'ConfirmationModalController',
 			size: 'sm'
 		});
