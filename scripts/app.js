@@ -1,4 +1,4 @@
-var nordeaApp = angular.module('nordeaApp', ['ngRoute', 'nordeaApp.services', 'ui.bootstrap'])
+var nordeaApp = angular.module('nordeaApp', ['ngRoute', 'nordeaApp.services', 'ui.bootstrap', 'angularLocalStorage', 'ngAnimate'])
     .config(['$routeProvider', function($routeProvider) {
         $routeProvider
             .when('/', {
