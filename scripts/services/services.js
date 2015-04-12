@@ -76,12 +76,12 @@ angular.module('nordeaApp.services', [])
             return availableToInstallApplications;
         };
         
-        // function to install application
+        // function to install an application
         service.installApplication = function(appId){
             installedApplicationsCache.put(appId, appId);
         };
 
-        // function to install application
+        // function to delete an application
         service.deleteApplication = function(appId){
             installedApplicationsCache.remove(appId);
         };
