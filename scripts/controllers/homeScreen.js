@@ -15,7 +15,7 @@ nordeaApp.controller('HomeScreenController', ['$scope', 'applicationsService', '
 
 		modalInstance.result.then(function () {
 			applicationsService.deleteApplication(appId);
-			$scope.applications = applicationsService.getInstalledApplications();
+			$scope.getHomeScreenApplications();
 		}, function () {});
 	}
 

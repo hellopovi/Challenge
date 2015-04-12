@@ -27,7 +27,7 @@ angular.module('nordeaApp.services', [])
         ];
 
         // installing default applications
-        if(!$cacheFactory.get('installedApplications')){
+        if(typeof($cacheFactory.get('installedApplications')) == "undefined" ){
             var cache = $cacheFactory('installedApplications');
             cache.put('0', '0');
             cache.put('5', '5');

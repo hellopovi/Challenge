@@ -1,4 +1,4 @@
-nordeaApp.directive('appIcon', ['$animate', function($animate) {
+nordeaApp.directive('appIcon', function() {
 	return {
 		restrict: 'A',
 		scope: true,
@@ -16,7 +16,7 @@ nordeaApp.directive('appIcon', ['$animate', function($animate) {
 			});
 		}
 	};
-}]);
+});
 
 nordeaApp.directive('deleteAppIcon', function() {
 	return {
